@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<h1>Hello World</h1>
-		
-		
-			
-		
-		
-		<h1>Done</h1>
+		<c:choose>
+			<c:when test="${empty param.formSubmit }">
+				<c:import url="form.jsp"/>
+			</c:when>
+			<c:otherwise>
+				<c:import url="thankYouPage.jsp"/>
+			</c:otherwise>
+		</c:choose>
 	</body>
 </html>
