@@ -10,7 +10,7 @@
   
   <servlet-mapping>
   	<servlet-name>Controller</servlet-name>
-  	<url-pattern>/firstServlet</url-pattern>
+  	<url-pattern>/form</url-pattern>
   </servlet-mapping>
   
   

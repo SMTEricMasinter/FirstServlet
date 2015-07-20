@@ -29,7 +29,7 @@ public class firstServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//performTask(request, response);
-		System.out.println("ok here");
+		request.setAttribute("opinion", "this is horrible");
 		this.getServletContext().getRequestDispatcher("/WEB-INF/include/main.jsp").forward(request, response);
 		
 	}
